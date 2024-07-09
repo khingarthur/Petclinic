@@ -25,5 +25,10 @@ pipeline {
                 sh 'mvn test'j
             }
         }
+    stage('Listing'){
+        steps{
+            sh 'ls'
+            }
+        }
 	}
 }
