@@ -9,7 +9,6 @@ pipeline {
 
     stage('Validate'){
         steps{
-		sh 'ls'
             sh 'mvn validate'
             }
         }
@@ -24,6 +23,11 @@ pipeline {
      stage('Test'){
             steps{
                 sh 'mvn test'j
+            }
+        }
+     stage('List'){
+            steps{
+                sh 'ls'
             }
         }
 
